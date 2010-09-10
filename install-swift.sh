@@ -16,8 +16,9 @@ fi
 echo "Downloading openstack cookbooks..."
 
 cd ~
-curl http://c0020195.cdn1.cloudfiles.rackspacecloud.com/openstack-cookbooks.tar.gz > ~/openstack-cookbooks.tar.gz
+wget -O openstack-cookbooks.tar.gz  http://github.com/aghareza/openstack-cookbooks/tarball/master
 tar zxvf openstack-cookbooks.tar.gz
+mv aghareza-openstack-cookbooks-* openstack-cookbooks
 cd openstack-cookbooks
 
 echo -n "Enter your username: "
