@@ -46,7 +46,7 @@ export PATH=${PATH}:~/bin
 ~/bin/startmain
 echo "Waiting for swift to start..."
 sleep 5
-/usr/bin/swift-auth-create-account test tester testing
+/usr/local/bin/swift-auth-create-account test tester testing
 
 echo "***"
 echo
