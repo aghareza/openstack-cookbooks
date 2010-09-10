@@ -8,7 +8,6 @@ if [ ! -f /usr/bin/chef-client ]; then
   sudo tar xvf rubygems-1.3.6.tgz
   cd rubygems-1.3.6
   sudo ruby setup.rb
-  sudo cp /usr/bin/gem1.8 /usr/bin/gem
   echo "Installing Chef and Ohai"
   sudo gem install ohai chef --no-rdoc --no-ri
 fi
